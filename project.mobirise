@@ -1,0 +1,159 @@
+{
+  "settings": {
+    "name": "terra station",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#2845ad"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/wallets-station.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nAllow: /\nsitemap: https://terra-station0.github.io/sitemap.xml\n",
+    "sitemapSwitcher": false,
+    "siteUrl": false,
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "y6ac6kvieo",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Terra Station™℠| station.terra.money | Official Site",
+        "meta_descr": "Terra Station is a digital wallet reimagined for DeFi, making it safe and easy to store, send, receive, collect, and swap tokens on the Solana blockchain.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/terra-station.jpg\" alt=\"terra station\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "vqzlmyvYrI",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"11\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#2845ad\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#2845ad\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h1 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Exploring Terra Station: Your Gateway to Terra Money and Blockchain Management</b></h1>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Interduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The growth of blockchain technology has created a new generation of financial applications, digital assets, and decentralized services. As cryptocurrencies become more widely used, secure and convenient wallets have become an essential part of the blockchain ecosystem. A wallet allows users to store, manage, transfer, and interact with digital assets while also providing access to decentralized applications.<br><br>Terra Station is a blockchain wallet and gateway to the Terra ecosystem. It was designed to provide users with an accessible interface for managing Terra-based assets and interacting with decentralized applications. Over time, Terra Station has become closely associated with the Terra blockchain ecosystem and its broader Web3 infrastructure.<br><br>For cryptocurrency users, understanding how <a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a> works can provide useful insight into blockchain wallets, decentralized applications, staking, governance, and digital asset management. This article explores Terra Station, its major features, benefits, use cases, security considerations, and its role in the evolving Terra ecosystem.<br><br>What Is Terra Station?<br><br><a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a> is a blockchain wallet and Web3 interface associated with the Terra ecosystem. It enables users to interact with blockchain networks through a wallet interface rather than directly working with complicated blockchain commands.<br><br>A wallet such as Terra Station can be used to manage cryptocurrency balances, send and receive assets, connect with decentralized applications, participate in network activities, and interact with supported blockchain services.<br><br>Unlike a traditional bank account, a blockchain wallet does not hold funds in a centralized institution. Instead, assets remain recorded on the blockchain, while the wallet provides the tools and cryptographic credentials necessary to control those assets.<br><br>This distinction is important because users are generally responsible for protecting their wallet credentials and recovery information.<br><br>Understanding the Terra Ecosystem<br><br>Terra is a blockchain ecosystem that has undergone significant changes since its original launch. The original <a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra network</a> became widely known for its algorithmic stablecoin ecosystem and the LUNA token. Following the collapse of the original Terra ecosystem in 2022, the blockchain community created a new Terra chain, commonly referred to as Terra 2.0, while the original chain continued separately under the Terra Classic name.<br><br>This history is important when discussing <a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a> because users need to understand which network and assets they are interacting with.<br><br>The broader Terra ecosystem uses blockchain technology to support decentralized applications and digital assets. Like other smart-contract platforms, Terra enables developers to create applications that operate through blockchain-based programs rather than traditional centralized servers.<br><br>Terra Station provides an interface through which users can interact with supported features of this ecosystem.<br><br>Key Features of Terra Station<br>1. Cryptocurrency Wallet<br><br>One of the primary functions of <a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a> is cryptocurrency management.<br><br>Users can create or import a wallet and use it to manage supported digital assets. The wallet interface provides information about balances and blockchain activity while allowing users to initiate transactions.<br><br>As with other non-custodial wallets, users should carefully protect their recovery phrase and private keys. Losing access to these credentials can result in permanent loss of access to wallet-controlled assets.<br><br>2. Sending and Receiving Assets<br><br>Terra Station allows users to transfer supported digital assets between blockchain addresses.<br><br>To receive funds, users provide their public wallet address. To send funds, users enter the recipient's address and specify the amount they want to transfer.<br><br>Because blockchain transactions are generally irreversible, users should verify addresses and transaction details carefully before confirming a transfer.<br><br>3. Staking<br><br>Proof-of-Stake blockchains rely on validators to help maintain network security and process transactions. Token holders can often delegate assets to validators and receive staking rewards according to the network's rules.<br><br><a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a> has provided users with access to staking functionality within the Terra ecosystem. Through the wallet interface, users can examine validators and manage supported staking activities.<br><br>Staking can provide potential rewards, but it also involves risks. Token prices can change significantly, and delegated assets may be subject to network-specific unbonding periods and other conditions.<br><br>4. Governance Participation<br><br>Decentralized blockchain networks frequently use governance systems that allow token holders to participate in decisions affecting the ecosystem.<br><br>Terra's governance model has historically allowed eligible participants to vote on proposals involving network development, parameters, and other ecosystem matters.<br><br>Wallet interfaces such as Terra Station can provide users with access to governance functionality where supported.<br><br>Governance is an important component of decentralized ecosystems because it gives communities a mechanism for coordinating changes without relying entirely on a single central authority.<br><br>5. dApp Connectivity<br><br>Another important feature of a Web3 wallet is the ability to connect with decentralized applications.<br><br><a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a> can serve as a gateway between users and supported blockchain applications. When a decentralized application requests a blockchain transaction, the wallet can present the transaction details to the user for approval.<br><br>This model allows users to maintain control over their assets while interacting with applications running on blockchain infrastructure.<br><br>How Terra Station Works<br><br>At a basic level, Terra Station functions as an interface between users and blockchain networks.<br><br>When a user creates a wallet, cryptographic keys are generated. The public address can be shared with others for receiving assets, while the private key or recovery phrase is used to control the wallet.<br><br>When a transaction is initiated, the wallet signs the transaction using the user's private credentials. The transaction is then submitted to the relevant blockchain network for processing.<br><br>Once confirmed, the transaction becomes part of the blockchain's permanent record.<br><br>This process demonstrates why wallet security is so important. The wallet interface itself is only one part of the system; control over the private credentials ultimately determines access to blockchain assets.<br><br>Benefits of <a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a><br>User-Friendly Blockchain Access<br><br>Blockchain technology can appear complicated to beginners. Terra Station provides a graphical interface that makes common blockchain activities easier to understand.<br><br>Instead of interacting directly with command-line tools or raw blockchain data, users can perform actions through a wallet interface.<br><br>Non-Custodial Control<br><br>A non-custodial wallet gives users direct control over their wallet credentials instead of placing assets under the control of a centralized exchange.<br><br>This approach provides greater independence but also places greater responsibility on the user.<br><br>Access to Web3<br><br>Terra Station can provide a gateway to decentralized applications and blockchain-based services within the supported Terra ecosystem.<br><br>Users can potentially move beyond simply holding cryptocurrency and interact with applications built on blockchain infrastructure.<br><br>Staking Opportunities<br><br>Where supported, staking allows token holders to participate in network security and potentially earn rewards.<br><br>This can make a wallet more than a simple storage tool by giving users access to additional blockchain functions.<br><br>Governance Access<br><br>Participation in governance can allow eligible users to contribute to decisions affecting the ecosystem.<br><br>This helps demonstrate one of the fundamental ideas behind decentralized networks: blockchain communities can coordinate through transparent, rules-based systems.<br><br>Terra Station for Developers<br><br>Terra Station is also relevant to developers building applications for the Terra ecosystem.<br><br>Developers need reliable wallet infrastructure so users can connect their wallets to decentralized applications and approve blockchain transactions.<br><br>A Web3 wallet can therefore become an important part of the user experience.<br><br>Developers may use blockchain interfaces and supported tools to create applications involving:<br><br>Decentralized finance<br>Digital assets<br>NFT applications<br>Gaming<br>Payments<br>Community platforms<br>Governance systems<br><br>As the blockchain ecosystem evolves, developer tools and wallet compatibility remain important factors in attracting new applications and users.<br><br>Terra Station and DeFi<br><br>Decentralized finance, commonly known as DeFi, is one of the major applications of blockchain technology.<br><br>DeFi applications attempt to provide financial services through smart contracts rather than traditional financial intermediaries.<br><br>Depending on network support and available applications, blockchain users may interact with services involving:<br><br>Token exchanges<br>Lending<br>Borrowing<br>Liquidity provision<br>Staking<br>Digital asset management<br><br>A wallet such as Terra Station can act as the user's access point to these applications.<br><br>However, DeFi carries substantial risks. Smart contract vulnerabilities, liquidity problems, market volatility, malicious applications, and transaction mistakes can all lead to financial losses.<br><br>Security Considerations<br><br>Security is one of the most important aspects of using Terra Station or any cryptocurrency wallet.<br><br>Users should follow several fundamental practices.<br><br>Protect the Recovery Phrase<br><br>A recovery phrase should never be shared with another person or entered into an unfamiliar website.<br><br>Anyone who obtains the recovery phrase may be able to control the associated wallet.<br><br>Verify Websites<br><br>Phishing attacks are common in the cryptocurrency industry. Users should make sure they are using legitimate wallet software and official websites before entering sensitive information.<br><br>Check Addresses<br><br>Blockchain transfers generally cannot be reversed. Users should carefully check recipient addresses before approving transactions.<br><br>Review Transactions<br><br>Users should understand what a decentralized application is requesting before signing a transaction.<br><br>A familiar-looking application can still potentially request an unexpected transaction.<br><br>Keep Software Updated<br><br>Using current wallet software helps users benefit from security improvements and compatibility updates.<br><br>Terra Station vs. Traditional Bank Accounts<br><br><a href=\"https://terra-station0.github.io/\" class=\"text-primary\">Terra Station</a> and traditional bank accounts operate according to fundamentally different models.<br><br>A bank account is managed by a financial institution that maintains records and controls access to the banking infrastructure. If a user loses a password, the bank can typically verify identity and restore access.<br><br>A non-custodial blockchain wallet works differently. The user controls the cryptographic credentials, and there may be no central institution capable of recovering a lost private key.<br><br>This provides greater financial sovereignty but also introduces additional responsibility.<br><br>The difference can be summarized simply:<br><br>Traditional banking: institution-controlled access.<br><br>Non-custodial blockchain wallet: user-controlled cryptographic access.<br><br>Understanding this distinction is essential for anyone entering the Web3 ecosystem.<br><br>Challenges and Limitations<br><br>Although Terra Station provides useful functionality, users should recognize its limitations.<br><br>First, cryptocurrency wallets can be intimidating for beginners because blockchain addresses, private keys, transaction fees, staking, and smart contracts involve concepts that may require time to understand.<br><br>Second, the broader Terra ecosystem has experienced significant changes and controversy following the collapse of the original Terra and UST ecosystem. Users should therefore carefully distinguish between Terra and Terra Classic and verify which network and assets they are using.<br><br>Third, blockchain transactions are generally irreversible. A simple mistake, such as sending assets to an incorrect address or interacting with a malicious contract, can result in permanent financial loss.<br><br>Finally, cryptocurrency markets remain highly volatile. Using a wallet does not eliminate investment or market risk.<br><br>The Future of Terra Station<br><br>The future of Terra Station will depend largely on the development and adoption of the Terra ecosystem.<br><br>As blockchain technology evolves, wallets are likely to become more than simple cryptocurrency storage tools. Future wallet platforms may integrate enhanced identity systems, decentralized applications, improved security mechanisms, cross-chain functionality, analytics, and more intuitive interfaces.<br><br>Interoperability could also become increasingly important. As users interact with multiple blockchain networks, wallets that provide seamless access across different ecosystems may become more valuable.<br><br>For Terra Station, continued ecosystem development, developer adoption, user experience improvements, and security will be important factors in determining its long-term relevance.<br><br>Conclusion<br><br>Terra Station is an important part of the Terra blockchain ecosystem, providing users with a practical interface for managing digital assets and interacting with blockchain-based services. Its functionality extends beyond basic cryptocurrency storage to areas such as staking, governance, decentralized applications, and Web3 interaction.<br><br>The platform also illustrates the broader advantages and responsibilities associated with non-custodial blockchain wallets. Users gain greater control over their assets, but they must also take responsibility for protecting private keys, recovery phrases, and transaction decisions.<br><br>As the blockchain industry continues to develop, wallets will remain a critical connection between users and decentralized networks. Terra Station's future will ultimately depend on how effectively it adapts to changing technology, ecosystem requirements, security expectations, and user needs.<br><br>For anyone exploring the Terra ecosystem, understanding Terra Station provides a useful foundation for learning how blockchain wallets work and how decentralized networks are accessed and managed.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "vqzlmM6PMW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
